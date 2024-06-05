@@ -1,0 +1,198 @@
+/* src/pages/Home.css */
+.first-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F4E3;
+    padding: 2rem;
+    margin-bottom: 9rem;
+    margin-top: 5rem;
+}
+
+.left-part {
+    flex: 1;
+    padding-right: 5rem;
+}
+
+.right-part {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.first-section-image {
+    max-width: 620px;
+    border: 2px solid black;
+    box-shadow: 0 6px 2px 3px black;
+    border-radius: 20px;
+}
+
+.other-sections {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.punisher-coin {
+    font-size: 60px;
+    color: rgb(170, 3, 3);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+p {
+    font-size: 16px;
+    color: #000; /* Change color if needed */
+    display: flex;
+    flex-direction: column;
+  }
+
+.join-button {
+    margin-right: 20px;
+    font-size: medium;
+    height: 40px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 0px 0px black;
+
+}
+
+.white-button {
+    font-size: medium;
+    height: 40px;
+    width: 200px;
+    background-color: #F8F4E3;
+    color: rgb(141, 7, 7);
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 0px 0px black;
+}
+
+.second-section {
+    height: 50px;
+    background-color:rgb(141, 7, 7);
+    color: white;
+    padding: 10px;
+}
+
+.second-section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-section .col {
+    flex: 1;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.second-section .col-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_c{
+    color: white;
+    font-size: large;
+}
+
+.second-section .col-icon {
+    font-size: 1em;
+    margin-right: 10px; /* Adjust this value to add space between icon and text */
+}
+
+.other-sections {
+    padding: 20px;
+}
+.third-section {
+    background-color: #DAE6FF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    background-color: #F8F4E3;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 0px 0px black;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height:400px;
+}
+
+.card-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+.card-right {
+    flex: 2;
+    padding-left: 50px;
+}
+
+.card-right h1 {
+    margin-top: 60px;
+    text-align: left;
+    font-size: 41px;
+    color: #e11212;
+    margin-bottom: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.card-right p {
+    color: black;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+    }
+
+    .left-part {
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+
+    .first-section-image {
+        width: 100%;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-left, .card-right {
+        padding: 10px 0;
+    }
+
+    .card-right {
+        padding-left: 0;
+        text-align: center;
+    }
+
+}
