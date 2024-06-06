@@ -1,0 +1,122 @@
+.buy-page {
+    padding: 20px;
+    background-color: #F8F4E3;
+    height:700px;
+  }
+  
+  .buyfirst-section {
+    padding: 20px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  #buycard {
+    top: 171px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%) translateY(50%);
+    max-width: 500px;
+    padding: 0px;
+    box-shadow: 0 5px 1px 0px black;
+    border-radius: 25px;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .details-container {
+    text-align: left;
+  }
+  
+  .buy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* New CSS */
+  
+
+  
+  #card-content {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 20px;
+    
+  }
+  
+  .stage-title {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: -12px;
+    margin-bottom: -14px;
+    color: rgb(230, 16, 16);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .description {
+    text-align: left;
+    margin: 25px 0;
+    font-weight: 500;
+    font-size: larger;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  

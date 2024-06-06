@@ -49,11 +49,12 @@ p {
   }
 
 .join-button {
+    font-weight: 700;
     margin-right: 20px;
     font-size: medium;
     height: 40px;
     width: 200px;
-    background-color: red;
+    background-color: rgb(230, 16, 16);;
     color: white;
     border: 1px solid black;
     padding: 0.5rem 1rem;
@@ -64,11 +65,12 @@ p {
 }
 
 .white-button {
+    font-weight: 700;
     font-size: medium;
     height: 40px;
     width: 200px;
     background-color: #F8F4E3;
-    color: rgb(141, 7, 7);
+    color: rgb(230, 16, 16);
     border: 1px solid black;
     padding: 0.5rem 1rem;
     border-radius: 26px;
@@ -77,41 +79,44 @@ p {
 }
 
 .second-section {
-    height: 50px;
+    height: auto; /* Adjusted height to fit content */
     background-color:rgb(141, 7, 7);
     color: white;
-    padding: 10px;
+  
 }
 
 .second-section .row {
     display: flex;
     justify-content: space-between;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
-.second-section .col {
+.col-list {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.col {
     flex: 1;
     display: flex;
-
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
-.second-section .col-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.text_c{
+.text_c {
     color: white;
     font-size: large;
 }
 
-.second-section .col-icon {
+.col-icon {
     font-size: 1em;
-    margin-right: 10px; /* Adjust this value to add space between icon and text */
+    margin-right: 10px;
 }
+
 
 .other-sections {
     padding: 20px;
@@ -170,31 +175,83 @@ p {
 
 
 
+/* Add media queries for responsive design */
+
+/* For screens smaller than 768px (typical mobile devices) */
 @media (max-width: 768px) {
     .first-section {
         flex-direction: column;
     }
 
-    .left-part {
-        padding-right: 0;
-        padding-bottom: 1rem;
+    .right-part {
+        order: -1; /* Move image to the top */
     }
 
-    .first-section-image {
-        width: 100%;
+    .buttons-container {
+        display: flex;
+        justify-content: center; /* Center buttons horizontally */
+        margin-top: 1rem; /* Add space between image and buttons */
     }
-    .card {
+
+    .buttons-container button {
+        margin: 0 0.5rem; /* Add space between buttons */
+    }
+    /* Adjustments for the first section */
+    .first-section {
         flex-direction: column;
-        align-items: center;
+        margin-bottom: 4rem; /* Decrease margin for better spacing */
+        margin-top: 2rem; /* Decrease margin for better spacing */
+        padding: 1rem; /* Decrease padding for better spacing */
+    }
+    
+    .left-part {
+        padding-right: 0; /* Remove right padding */
+    }
+
+    /* Adjustments for the image in the first section */
+    .first-section-image {
+        width: 100%; /* Make image width 100% of container */
+        max-width: none; /* Remove max-width for smaller screens */
+    }
+
+    /* Adjustments for the second section */
+    .second-section {
+        height: auto; /* Remove fixed height */
+        padding: 10px 0; /* Adjust padding for better spacing */
+    }
+
+    /* Adjustments for the marquee */
+    .row {
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    .col {
+        margin-bottom: 1rem; /* Add space between columns */
+    }
+
+    /* Adjustments for the card section */
+    .card {
+        flex-direction: column; /* Stack card content vertically */
+        height: auto; /* Remove fixed height */
+        margin-bottom: 2rem; /* Add space between sections */
     }
 
     .card-left, .card-right {
-        padding: 10px 0;
+        padding: 0; /* Remove padding for better spacing */
+        margin-bottom: 1rem; /* Add space between card elements */
     }
 
     .card-right {
-        padding-left: 0;
-        text-align: center;
+        text-align: center; /* Center text content */
     }
 
+    .card-image {
+        max-width: 100%; /* Make image width 100% of container */
+    }
+
+    /* Adjustments for other sections */
+    .other-sections {
+        margin-bottom: 2rem; /* Add space between sections */
+    }
+    
 }

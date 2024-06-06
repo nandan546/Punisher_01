@@ -28,35 +28,38 @@ const Home = () => (
             </div>
         </section>
         <section className="second-section">
-            <marquee>
-                <div className="row">
-                    <div className="col">
-                        <i className="fas fa-star col-icon"></i>
-                        <p className='text_c'>Cute</p>
-                    </div>
-                    <div className="col">
-                        <i className="fas fa-star col-icon"></i>
-                        <p className='text_c'>Evil</p>
-                    </div>
-                    <div className="col">
-                        <i className="fas fa-star col-icon"></i>
-                        <p className='text_c'>Energy</p>
-                    </div>
-                    <div className="col">
-                        <i className="fas fa-star col-icon"></i>
-                        <p className='text_c'>Moon</p>
-                    </div>
-                    <div className="col">
-                        <i className="fas fa-star col-icon"></i>
-                        <p className='text_c'>Punisher</p>
-                    </div>
-                    <div className="col">
-                        <i className="fas fa-star col-icon"></i>
-                        <p className='text_c'>Sniper</p>
-                    </div>
-                </div>
-            </marquee>
-        </section>
+    <marquee>
+        <div className="row">
+            <ul className="col-list"> {/* Changed div to ul */}
+                <li className="col">
+                    <i className="fas fa-star col-icon"></i>
+                    <p className='text_c'>Cute</p>
+                </li>
+                <li className="col">
+                    <i className="fas fa-star col-icon"></i>
+                    <p className='text_c'>Evil</p>
+                </li>
+                <li className="col">
+                    <i className="fas fa-star col-icon"></i>
+                    <p className='text_c'>Energy</p>
+                </li>
+                <li className="col">
+                    <i className="fas fa-star col-icon"></i>
+                    <p className='text_c'>Moon</p>
+                </li>
+                <li className="col">
+                    <i className="fas fa-star col-icon"></i>
+                    <p className='text_c'>Punisher</p>
+                </li>
+                <li className="col">
+                    <i className="fas fa-star col-icon"></i>
+                    <p className='text_c'>Sniper</p>
+                </li>
+            </ul>
+        </div>
+    </marquee>
+</section>
+
         <section className="third-section">
             <div className="card">
                 <div className="card-left">
