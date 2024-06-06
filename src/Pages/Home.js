@@ -3,8 +3,12 @@ import React from 'react';
 import '../style/Home.css';
 import sampleImage from '../assests/img_1.PNG';
 import sampleImage1 from '../assests/img_2.PNG';
+import crouselimg1 from '../assests/img_3.PNG';
+import crouselimg3 from '../assests/img_4.PNG';
+import crouselimg2 from '../assests/img_5.PNG';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 
 const Home = () => (
@@ -79,7 +83,7 @@ const Home = () => (
                         <p>Description for slide 1.</p>
                     </div>
                     <div className="slide-right">
-                        <img src={sampleImage} alt="Slide 1" />
+                        <img src={crouselimg1} alt="Slide 1" />
                     </div>
                 </div>
                 <div className="slide">
@@ -88,7 +92,7 @@ const Home = () => (
                         <p>Description for slide 2.</p>
                     </div>
                     <div className="slide-right">
-                        <img src={sampleImage} alt="Slide 2" />
+                        <img src={crouselimg3} alt="Slide 2" />
                     </div>
                 </div>
                 <div className="slide">
@@ -97,7 +101,7 @@ const Home = () => (
                         <p>Description for slide 3.</p>
                     </div>
                     <div className="slide-right">
-                        <img src={sampleImage} alt="Slide 3" />
+                        <img src={crouselimg2} alt="Slide 3" />
                     </div>
                 </div>
             </Carousel>

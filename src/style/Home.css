@@ -168,6 +168,8 @@ p {
     text-align: left;
 }
 
+
+
 @media (max-width: 768px) {
     .first-section {
         flex-direction: column;
