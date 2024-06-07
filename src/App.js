@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Navbar';
-import Footer from './Footer';
+
 import Home from './Pages/Home';
 import BuyPage from './Pages/Buy';
 import Punish from './Pages/Punisher';
@@ -20,7 +20,7 @@ const App = () => (
           <Route path="/punish" element={<Punish />} />
         </Routes>
       </main>
-      <Footer />
+    
     </div>
   </Router>
 );
